@@ -127,7 +127,7 @@ h4 span:first-child {
 	content: attr(href);
 }
 
-@media all and (min-width: 480px) {
+@media (min-width: 480px) {
 	.strike-through {
 		border-top: 1px solid #f4f6f6;
 		height: 20px;
@@ -151,7 +151,7 @@ h4 span:first-child {
 		right: 0;
 	}
 }
-@media all and (max-width: 768px) {
+@media (max-width: 768px) {
 	.col-sm-6:last-child {
 		margin-bottom: 0px;
 	}
@@ -164,7 +164,7 @@ h4 span:first-child {
 		content: "View publication";
 	}
 }
-@media all and (max-width: 480px) {
+@media (max-width: 480px) {
 	h1 {
 		font-size: 26px;
 	}
@@ -184,6 +184,19 @@ h4 span:first-child {
 	}
 	#actions {
 		display: none;
+	}
+}
+@media print {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
 	}
 }
 
