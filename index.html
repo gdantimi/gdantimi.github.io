@@ -1,467 +1,469 @@
-<!doctype html>
-<html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Gabriele</title>
-	
-	<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css" media="all">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
-body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gabriele</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto:300,400,700|Noto+Serif:400" rel="stylesheet" type="text/css">
+  <style>
+    body {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  background-color: #f6f6f6;
 }
-a {
-	color: #2ecc71;
-}
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
-}
+
 p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
-h1,
-h2,
-h3,
-h4 {
-	margin-top: 0
-}
-section {
-	margin-top: 30px;
-}
-li {
-	line-height: 1.8;
-	list-style: none;
-}
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
-blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
-}
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
-}
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
-}
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
+  display: inline;
 }
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
-}
-@media print {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
+a,span {
+  color: #4c92c1;
+  text-decoration: none;
 }
 
-	</style>
-	
-	</head>
-	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Gabriele
-					</h1>
-					<h2>
-						D&#x27;Antimi
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+.email,.site,.github,.phone-number,.address {
+  margin-bottom: .4em;
+  font-size: 1em;
+}
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">g.dantimi@gmail.com</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">+372 5301 9951</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href="gdantimi.github.io">gdantimi.github.io</a>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>I started working in a small company that was providing software for public administration, learning the basics of developing and delivering a product that could meet the customer’s expectations. After two years I decided to move abroad to learn more modern techniques and processes and work on different projects with different technologies. Lately I developed interest in testing techniques, machine learning and devops and I am willing to improve in these areas in the next future</p>
-		</div>
-	</section>
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						linkedin
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://www.linkedin.com/in/gabrieledantimi/?locale=en_US">gdantimi</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Ignite OU</span>
-					<span class="date">
-						2014 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="www.ignite.ee">www.ignite.ee</a>
-				</div>
-				<div class="position">
-					Java Developer
-				</div>
-				<div class="summary">
-					<p>In the beginning I was trained in scrum process and worked on developing a new web portal for one of our customers for few months. After that I worked on different projects, of smaller and bigger size with different team members also from our customer&#x27;s side, learning new technologies and getting an impression of different development&#x27;s styles. I am also interested in learning frontend development (Angular, React) and data science</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Development of Recrur, an applicant tracking system that allows you to manage your talents’ contact base, ongoing recruitment projects, workflow and pipeline all in one place</li>
-					<li class="bullet">Development and launching TransferWise bank in UK FPS scheme (http://www.fasterpayments.org.uk/).</li>
-					<li class="bullet">Development of the client&#x60;s portal new web. Total facelift of the system, implementing a more reactive UI using JQuery and Ajax. Refactoring of the project code base in order to split it in modules. Implementing security using Spring framework (csr,hsts,xss-protection).</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>AvelcoWeb Srl</span>
-					<span class="date">
-						2012 — 2014
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="www.avelcoweb.eu">www.avelcoweb.eu</a>
-				</div>
-				<div class="position">
-					Junior Java developer
-				</div>
-				<div class="summary">
-					<p>I started as an intern, developing a small module for a bigger project that was presented also as thesis for the Bachelor Degree. I worked with the integrations department even though I mostly worked on the web application for SIRSAP project and Android applications for tablets</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Development of SIRSAP project for the Emilia-Romagna county. Application development for inspections planning and monitoring by regional employees, statistics with iReport, data import</li>
-					<li class="bullet">Design and development of applications for the Public Administration and private customers. The applications allow supervising activities on Android tablets, generation of documentation in place and sending collected data to the central system</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+.card {
+  /*background-color: #fefefe;
+  box-shadow: 1px 1px 14px -5px rgba(0,0,0,0.5);
+  border-radius: 2px;*/
+  margin-bottom: 15px;
+}
 
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>University of Genoa</span>
-					<span class="date">
-						2004 — 2012
-					</span>
-				</h4>
-				<div class="area">
-					Computer Science
-				</div>
-				<div class="studyType">
-					Bachelor&#x27;s degree
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Java</h4>
-				</div>
-				<ul class="keywords">
-					<li>JUnit</li>
-					<li>Mockito</li>
-					<li>Java 8</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Frameworks</h4>
-				</div>
-				<ul class="keywords">
-					<li>Spring</li>
-					<li>Android</li>
-					<li>Vaadin</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Databases</h4>
-				</div>
-				<ul class="keywords">
-					<li>Oracle</li>
-					<li>MySql</li>
-					<li>PostgreSql</li>
-					<li>MS Sql Server</li>
-					<li>Flyway</li>
-					<li>Liquibase</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Messaging</h4>
-				</div>
-				<ul class="keywords">
-					<li>MuleEsb</li>
-					<li>RabbitMQ</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Web</h4>
-				</div>
-				<ul class="keywords">
-					<li>Rest</li>
-					<li>Soap</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Others</h4>
-				</div>
-				<ul class="keywords">
-					<li>Blockchain</li>
-					<li>Git</li>
-					<li>Gradle</li>
-					<li>Maven</li>
-					<li>Scrum</li>
-					<li>Javascript</li>
-					<li>Machine Learning</li>
-					<li>Linux</li>
-					<li>IntellijIDEA</li>
-					<li>Eclipse</li>
-					<li>JQuery</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+.header.card {
+  margin-top: 15px;
+  margin-right: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 15px 0 20px;
+  border-bottom: 1px dashed #CFCFCF;
+}
 
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Italian</strong>
-				</div>
-				<div class="fluency">
-					Native
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Professional working proficiency
-				</div>
-			</div>
-			</div>
+section.card {
+  padding: 15px 15px 22.5px 20px;
+}
+
+.header {
+  overflow: auto;
+  margin-left: 6px;
+  margin-right: 12px;
+}
+
+.skill {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  margin-bottom: .4em;
+  color: #4c92c1;
+  font-weight: 400;
+}
+
+.skills p {
+  font-size: 1em;
+}
+
+#name {
+  font-family: 'Open Sans',Arial,sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  color: #555;
+  float: left;
+  margin: .1em .1em .2em;
+}
+
+#resume-container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin-top: 0;
+  margin-bottom: .4em;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.left-content {
+  float: left;
+  width: 32%;
+  margin-left: 6px;
+}
+
+.left-content .section-header {
+  font-weight: 400;
+  color: #BC1B39;
+  text-transform: uppercase;
+}
+
+.left-content .section-content {
+  font-weight: 300;
+}
+
+.left-content .title {
+  font-weight: 400;
+  margin-bottom: .5em;
+  color: #4c92c1;
+}
+
+.left-content .card {
+  border-bottom: 1px dashed #CFCFCF;
+}
+
+.right-content {
+  width: 64%;
+  margin-right: 15px;
+  float: right;
+}
+
+.right-content .section-header {
+  /*color: #000;*/
+  color: #BC1B39;
+  text-transform: uppercase;
+}
+
+.right-content {
+  border-left: 1px dashed #CFCFCF;
+}
+
+.section-content {
+  overflow: auto;
+}
+
+.title {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .2em;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.duration {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  color: #3c82b1;
+  margin-top: .2em;
+  margin-bottom: .3em;
+  text-align: right;
+}
+
+.occupation {
+  font-size: 1em;
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+
+.languages {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.list {
+  list-style-type: none;
+  font-size: 1em;
+}
+
+.location {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .1em;
+}
+
+.left {
+  float: left;
+  width: 45%;
+  clear: both;
+}
+
+.right {
+  float: right;
+  width: 55%;
+}
+
+ul.list {
+  list-style-type: circle;
+  padding-left: 1.1rem;
+}
+
+ul.list li {
+  line-height: 135%;
+  margin-bottom: .2em;
+}
+
+ul.list li:before {
+  display: inline-block;
+  width: 0;
+  margin-left: 0;
+}
+
+.project,.employment,.education,.skills {
+  margin-bottom: .8em;
+}
+
+.education-info .title {
+  margin-bottom: .2em;
+  line-height: 130%;
+}
+
+.education.last {
+  margin-bottom: .8em !important;
+}
+
+.education .grade {
+  font-size: 1em;
+}
+
+.project-info {
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.last {
+  margin-bottom: 0!important;
+}
+
+.term {
+  font-size: 1.75em;
+  font-weight: 200;
+  color: #000;
+}
+
+#skills-container,.contact {
+  margin-bottom: 0;
+}
+
+.interests,.subtitle {
+  font-size: 1em;
+  margin-bottom: .2em;
+}
+
+.project .title,.employment .title {
+  color: #4c92c1;
+  font-weight: 400;
+}
+
+.employment .summary {
+  font-size: 1em;
+  margin-bottom: .4em;
+}
+
+#awards .summary {
+  font-size: 1em;
+}
+
+#summary {
+  font-size: 1em;
+}
+
+.contact .site {
+  font-size: .9em;
+}
+
+  </style>
+</head>
+
+<body>
+  <div id='resume-container'>
+    <div class='header card'>
+      <h1 id='name'>
+          Gabriele
+        </h1>
+      <span class='term'>D&#x27;Antimi</span>
+    </div>
+    <div class='left-content'>
+      <section class='card'>
+        <div class='section-header'>Contact</div>
+        <div class='section-content' id='contact'>
+          <div class='contact'>
+            <div class='address'>
+              Tallinn, Harjumaa, EE
+            </div>
+            <div class='email'>
+              <a href='mailto:g.dantimi@gmail.com'>g.dantimi@gmail.com</a>
+            </div>
+              
+            <div class='site'>
+              linkedin: <a href='https://www.linkedin.com/in/gabrieledantimi/?locale=en_US'>gdantimi</a>
+            </div>
+              
+            <div class='phone-number last'>
+              <a href="tel:+372 5301 9951">+372 5301 9951</a>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <section class='card'>
+        <div class='section-header'>Technical Skills</div>
+        <div class='section-content' id='technical-skills'>
+          <div id='skills-container'>
+            <div class='skills'>
+              <div class='skill'>Java</div>
+                
+              <p>
+                 JUnit,  Mockito,  Java 8 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Frameworks</div>
+                
+              <p>
+                 Spring,  Android,  Vaadin 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Databases</div>
+                
+              <p>
+                 Oracle,  MySql,  PostgreSql,  MS Sql Server,  Flyway,  Liquibase 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Web</div>
+                
+              <p>
+                 Rest,  Soap,  Javascipt,  JQyery 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Messaging</div>
+                
+              <p>
+                 MuleEsb,  RabbitMQ 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Others</div>
+                
+              <p>
+                 Git,  Gradle,  Maven,  Scrum,  Blockchain,  Machine Learning,  Linux,  IntellijIDEA,  Eclipse 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <section class='card'>
+        <div class='section-header'>Education</div>
+        <div class='section-content' id='education'>
+          <div class='education last'>
+            <div class='education-info'>
+              <div class='title'>
+                Bachelor&#x27;s degree in Computer Science
+                <br>at  University of Genoa 
+              </div>
+              <div class='duration'>
+                 Jan 2004   - Jan 2012 
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+ <section class='card'>
+        <div class='section-header'>Languages</div>
+       <div class='section-content' id='languages'>
+          <div id='skills-container'>
+            <div class='skills'>
+              <div class='skill'>Italian</div>
+                
+		<div class="level">
+			<em>Native</em>
 		</div>
-	</section>
-
-	
-
+            </div>
+	   <div class='skills'>
+              <div class='skill'>English</div>
+                
+		<div class="level">
+			<em>Professional working proficiency</em>
+		</div>
+            </div>
 	</div>
-	
-	</body>
+        </div>
+      </section>
+           </div>
+    <div class='right-content'>
+      <section class='card'>
+        <div class='section-header'>Summary</div>
+        <div class='section-content' id='summary'>
+          I started working in a small company that was providing software for public administration, learning the basics of developing and delivering a product that could meet the customer’s expectations. After two years I decided to move abroad to learn more modern techniques and processes like SCRUM and work on different projects with different technologies to improve my skills also in a horizonal way. Lately I developed interest in testing techniques, DevOps, machine learning and data science and I am willing to improve in these areas in the next future, following online courses and trying to apply the gained knowledge in the projects I will work on. I am also interested in learning frontend development (Angular, React).
+        </div>
+      </section>
+      <section class='card'>
+        <div class='section-header'>Employment</div>
+        <div class='section-content' id='employment'>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+                <a href='www.ignite.ee'>
+                  		Ignite OU
+                  	</a>   Java Developer 
+              </div>
+              <div class='duration'>
+                 Jan 2014   - Present 
+              </div>
+            </div>
+            <div class='info'>
+              <div class="summary">
+                In the beginning I was trained in SCRUM process developed a new web portal for one of our customers for few months. After that I worked on different projects, of smaller and bigger size with different team members also from our customer&#x27;s side, learning new technologies and getting an impression of different development&#x27;s styles
+              </div>
+               
+              <ul class="list">
+                <li>Development of Recrur, an applicant tracking system that allows you to manage your talents&#x27; contact base, ongoing recruitment projects, workflow and pipeline all in one place</li>
+                <li>Development and launching TransferWise bank in UK FPS scheme (http://www.fasterpayments.org.uk/)</li>
+                <li>Development of the client&#x27;s portal new web. Total facelift of the system, implementing a more reactive UI. Refactoring of the project code base in order to split it in modules. Implementing security using Spring framework (csrf,hsts,xss-protection)</li>
+              </ul>
+            </div>
+          </div>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+                <a href='www.avelcoweb.eu'>
+                  		AvelcoWeb Srl
+                  	</a>   Junior Java developer 
+              </div>
+              <div class='duration'>
+                 Jan 2012   - Jan 2014 
+              </div>
+            </div>
+            <div class='info'>
+              <div class="summary">
+                I started as an intern, developing a small module for a bigger project that was presented also as thesis for the Bachelor Degree. I worked with the integrations department even though I mostly worked on the web application for SIRSAP project and Android applications for tablets
+              </div>
+               
+              <ul class="list">
+                <li>Development of SIRSAP project for the Emilia-Romagna county. Application development for inspections planning and monitoring by regional employees, statistics with iReport, data import</li>
+                <li>Design and development of applications for the Public Administration and private customers. The applications allow supervising activities on Android tablets, generation of documentation in place and sending collected data to the central system</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+            </div>
+  </div>
+</body>
+
 </html>
